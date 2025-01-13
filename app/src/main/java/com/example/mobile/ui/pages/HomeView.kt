@@ -206,7 +206,7 @@ fun OnError(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground), contentDescription = ""
+            painter = painterResource(id = R.drawable.cancel), contentDescription = ""
         )
         Text(text = message, modifier = Modifier.padding(16.dp))
         Button(onClick = retryAction) {
@@ -218,7 +218,7 @@ fun OnError(
 fun OnLoading(modifier: Modifier = Modifier) {
     Image (
         modifier = modifier.size(200.dp),
-        painter = painterResource(R.drawable.ic_launcher_background),
+        painter = painterResource(R.drawable.alamak),
         contentDescription = ""
     )
 }
