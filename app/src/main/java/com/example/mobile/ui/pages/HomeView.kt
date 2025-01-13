@@ -47,6 +47,7 @@ import com.example.mobile.model.Mahasiswa
 import com.example.mobile.ui.viewmodel.HomeUiState
 import com.example.mobile.ui.viewmodel.HomeViewModel
 import com.example.mobile.ui.viewmodel.PenyediaViewModel
+import com.example.mobile.ui.widget.TopAppBar
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -61,7 +62,12 @@ fun HomeScreen(
     Scaffold (
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-
+            TopAppBar(
+                judul = "Daftar Mahasiswa",
+                showBackButton = false,
+                onBack = {},
+                modifier = modifier
+            )
         },
         floatingActionButton = {
             FloatingActionButton(
